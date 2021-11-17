@@ -1,0 +1,25 @@
+<%- include('partials/header') %>
+<h1>User Database</h1>
+
+
+
+<% Users.forEach(function(User){ %>
+
+<table style="width: 100%">
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Date of Birth</th>
+  </tr>
+
+  <tr>
+    <td><%= User.name %></td>
+    <td><%= User.email %></td>
+    <td><%= User.dob %></td>
+  </tr>
+</table>
+
+<% }) %>
+<a href="/">Logout</a>
+
+<%- include('partials/footer') %>
